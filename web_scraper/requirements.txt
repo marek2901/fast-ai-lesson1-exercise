@@ -1,6 +1,8 @@
 appnope==0.1.0
 astroid==2.0
 backcall==0.1.0
+beautifulsoup4==4.6.0
+bs4==0.0.1
 certifi==2018.4.16
 chardet==3.0.4
 decorator==4.3.0
