@@ -13,3 +13,4 @@
 > for more checkout fast.ai zip dogscats dataset
 
 * each folder should contain both PLN and USD subfolder with unique randomizes images
+* the root folder is `../dataset`
