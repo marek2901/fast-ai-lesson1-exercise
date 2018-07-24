@@ -3,7 +3,7 @@ from pathlib import Path
 import shutil
 
 subsets_config = [
-    'test',
+    'test1',
     'train',
     'valid',
 ]
