@@ -30,12 +30,12 @@ def main():
 
     raw_scrapped_data = Path('../web_scraper/scrap_data')
 
-    images = [data_obj for data_obj in iterate_images(raw_scrapped_data)]
+    images = list(iterate_images(raw_scrapped_data))
     images_per_kind = []
 
     for data_kind in iterate_kinds(raw_scrapped_data):
         kind_name = data_kind.name
-        images_of_a_kind = list(filter(lambda x: x[0].name == kind_name, images))
+        images_of_a_kind = [img for img in images if img[0].name == kind_name ]
         len_of_a_kind = len(images_of_a_kind)
         images_per_kind.append(
             (kind_name, len_of_a_kind, images_of_a_kind)
